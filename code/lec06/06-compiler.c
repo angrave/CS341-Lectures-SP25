@@ -23,6 +23,8 @@
 	      perror(compiler); 
 	      exit(1);
 	    }
+// WEXITSTATUS(status)  will tell us the exit value of gcc (provided WIFEXITED(status) is nonzero)
+
 	    int status=0;
 	  
 	    waitpid(child, &status, 0);
@@ -30,7 +32,6 @@
 // WEXITSTATUS(status)  will tell us the exit value of gcc (provided WIFEXITED(status) is nonzero)
 
 	    if( ? ) break;
-	    sleep(5);
 	  }
 	  puts("running your program"); // output to a terminal and puts includes a newline so this is immediately flushed :-)
 
