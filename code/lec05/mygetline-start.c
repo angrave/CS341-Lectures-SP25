@@ -3,7 +3,8 @@
 #include <unistd.h>
 
 ssize_t mygetline(char **lineptr, size_t *n, FILE *f){
-  what asserts would you add here?
+  
+  // what asserts would you add here?
 
 
   if( _____)  { *n = 256; _________ = malloc(*n);}
@@ -16,5 +17,5 @@ ssize_t mygetline(char **lineptr, size_t *n, FILE *f){
       c = fgetc(f);
 ?  }
    return -1; // error (e.g. end of file)
-}
+ }
 
